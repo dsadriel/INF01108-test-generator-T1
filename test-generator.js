@@ -23,7 +23,7 @@ for (let i = 0; i < n_tests; i++) {
     }
 
     // convert string
-    string.map(char => {
+    string = string.map(char => {
         if (operation == 0) {
             char += step;
             char -= char > 90 ? 26 :0;
