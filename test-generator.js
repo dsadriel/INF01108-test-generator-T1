@@ -1,12 +1,12 @@
 const textarea = document.getElementById("file-content");
 const header = `TESTES RANDOMICOS - github: @marcelobasso\n.c\nCasos de teste - 2023-2\n.m\n65535\n.l\n.d\n.p\n0`;
-let step = Math.floor(Math.random() * 25);
 let n_tests = 50;
 var line;
 let string = [];
 
 textarea.textContent = header;
 for (let i = 0; i < n_tests; i++) {
+    let step = Math.floor(Math.random() * 25);
     let operation = Math.floor(Math.random() * 2) // 0/1;
     let word_size = Math.floor(Math.random() * 25); // 0-25 
     textarea.textContent += `\n.t\n.c\n` +
@@ -15,7 +15,7 @@ for (let i = 0; i < n_tests; i++) {
         `192=196\n` +
         `193=221\n` +
         `194=${step}\n` +
-        `195=${step}\n`;
+        `195=${operation}\n`;
 
     for (let j = 0; j < word_size; j++) {
         string[j] =  Math.floor(Math.random() * (90 - 65 + 1) + 65); // 65-90
