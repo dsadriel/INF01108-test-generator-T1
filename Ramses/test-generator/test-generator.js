@@ -14,7 +14,8 @@ for (let i = 0; i < n_tests; i++) {
         `.i\n` +
         `192=196\n` +
         `193=221\n` +
-        `194=${step}\n`;
+        `194=${step}\n` +
+        `195=${operation}`;
 
     for (let j = 0; j < word_size; j++) {
         string[j] =  Math.floor(Math.random() * (90 - 65 + 1) + 65); // 65-90
