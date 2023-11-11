@@ -35,7 +35,7 @@ for (let i = 0; i < n_tests; i++) {
         return char;
     });
 
-    let end_second_string = 196 + word_size + 2;
+    let end_second_string = 196 + word_size + 1;
     textarea.textContent += `${end_second_string - 1}=0\n` +
         `.o\n`;
     
