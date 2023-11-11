@@ -13,7 +13,7 @@ for (let i = 0; i < n_tests; i++) {
         `Teste ${i + 1}\n` +
         `.i\n` +
         `192=196\n` +
-        `193=${196 + word_size + 2}\n` +
+        `193=${196 + word_size + 1}\n` +
         `194=${step}\n` +
         `195=${operation}\n`;
 
